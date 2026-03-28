@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café & Restaurant Kennidi | Kaprun</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ───────────────────────── NAVIGATION ───────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Kennidi</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">Über uns</a>
+        <a href="#highlights">Küche</a>
+        <a href="#menu">Speisekarte</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#reserve" class="btn-nav-reserve">Tisch reservieren</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Über uns</a>
+      <a href="#highlights">Küche</a>
+      <a href="#menu">Speisekarte</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#reserve" class="btn-mobile-reserve">Tisch reservieren</a>
+    </div>
+  </header>
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-animate="fade-up">
+      <p class="hero-tagline">Frisch gekocht · Kreativ · Gemütlich</p>
+      <h1 class="hero-title">Café &amp; Restaurant<br /><span class="accent">Kennidi</span></h1>
+      <p class="hero-sub">Herzlich willkommen in Kaprun — wo regionale Küche auf modernes Flair trifft.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Zur Speisekarte</a>
+        <a href="#reserve" class="btn-outline">Tisch reservieren</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── ABOUT + HOURS ───────────────────────── -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text" data-animate="fade-right">
+          <span class="section-label">Unser Restaurant</span>
+          <h2>Bunt gemischt.<br />Frisch gekocht.<br />Kreativ.</h2>
+          <p>Im Kennidi kochen wir täglich frisch — ganz ohne Convenience-Produkte und Geschmacksverstärker. Wir setzen auf regionale und österreichische Zutaten, österreichisches Rindfleisch und nachhaltigen Fairtrade-Kaffee von Segafredo.</p>
+          <p>Ob Pizza, Pasta, Burger oder Steak — bei uns findet jeder seinen Lieblingsplatz. Und natürlich: hausgemachter Kuchen, Apfelstrudel und Eisbecher für ein süßes Finale.</p>
+          <div class="ama-badge" data-animate="pop">
+            <div class="ama-icon">🏅</div>
+            <div class="ama-text">
+              <strong>AMA-zertifiziert</strong>
+              <span>Österreichische Qualität &amp; Herkunft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-card" data-animate="fade-left">
+          <div class="hours-header">
+            <span class="hours-icon">🕛</span>
+            <h3>Öffnungszeiten</h3>
+          </div>
+          <ul class="hours-list">
+            <li>
+              <span class="day">Montag – Sonntag</span>
+              <span class="time">12:00 – 22:00 Uhr</span>
+            </li>
+          </ul>
+          <p class="hours-note">Manchmal bleiben wir etwas länger — komm einfach vorbei!</p>
+          <div class="hours-divider"></div>
+          <div class="hours-contact-quick">
+            <a href="tel:+43660537446" class="quick-contact">
+              <span>📞</span> 0043 660 53 77 446
+            </a>
+            <a href="mailto:kennidi@ampere.at" class="quick-contact">
+              <span>✉️</span> kennidi@ampere.at
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── KITCHEN HIGHLIGHTS ───────────────────────── -->
+  <section class="highlights-section" id="highlights">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Unsere Küche</span>
+        <h2>Was euch erwartet</h2>
+        <p>Vier Klassiker, perfekt umgesetzt — mit frischen Zutaten aus der Region.</p>
+      </div>
+      <div class="highlights-grid">
+
+        <div class="highlight-card" data-animate="fade-up" data-delay="0">
+          <div class="highlight-emoji">🍕</div>
+          <h3>Pizza</h3>
+          <p>Hausgemacht mit knusprigem Boden, frischer Tomatensauce und hochwertigen Belägen — klassisch oder kreativ.</p>
+        </div>
+
+        <div class="highlight-card" data-animate="fade-up" data-delay="100">
+          <div class="highlight-emoji">🍔</div>
+          <h3>Burger</h3>
+          <p>Saftige Patties aus österreichischem AMA-Rindfleisch, hausgemachte Saucen und frisches Gemüse — der Unterschied schmeckt.</p>
+        </div>
+
+        <div class="highlight-card" data-animate="fade-up" data-delay="200">
+          <div class="highlight-emoji">🍝</div>
+          <h3>Pasta</h3>
+          <p>Al dente gekochte Pasta mit selbstgemachten Saucen — von der klassischen Bolognese bis zur veganen Variante.</p>
+        </div>
+
+        <div class="highlight-card" data-animate="fade-up" data-delay="300">
+          <div class="highlight-emoji">🥩</div>
+          <h3>Steaks</h3>
+          <p>Österreichisches Rindfleisch in Premium-Qualität, nach Wunsch gegart — mit hausgemachten Beilagen und Salaten.</p>
+        </div>
+
+      </div>
+
+      <!-- Dietary badges -->
+      <div class="dietary-row" data-animate="fade-up">
+        <div class="dietary-badge">
+          <span class="dietary-icon">🌿</span>
+          <span>Vegetarisch</span>
+        </div>
+        <div class="dietary-badge">
+          <span class="dietary-icon">🌱</span>
+          <span>Vegan</span>
+        </div>
+        <div class="dietary-badge">
+          <span class="dietary-icon">🌾</span>
+          <span>Glutenfrei</span>
+        </div>
+        <div class="dietary-badge">
+          <span class="dietary-icon">🥛</span>
+          <span>Laktosefrei</span>
+        </div>
+        <div class="dietary-badge">
+          <span class="dietary-icon">⚠️</span>
+          <span>Allergikerfreundlich</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── SPEISEKARTE ───────────────────────── -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Speisekarte</span>
+        <h2>Unsere Gerichte</h2>
+        <p>Frisch zubereitet, täglich verfügbar — Allergene auf Anfrage.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-tab="pizza" role="tab">🍕 Pizza</button>
+        <button class="menu-tab" data-tab="burger" role="tab">🍔 Burger</button>
+        <button class="menu-tab" data-tab="pasta" role="tab">🍝 Pasta</button>
+        <button class="menu-tab" data-tab="steaks" role="tab">🥩 Steaks</button>
+        <button class="menu-tab" data-tab="salate" role="tab">🥗 Salate</button>
+        <button class="menu-tab" data-tab="desserts" role="tab">🍰 Desserts</button>
+        <button class="menu-tab" data-tab="getraenke" role="tab">☕ Getränke</button>
+      </div>
+
+      <!-- Pizza -->
+      <div class="menu-panel active" id="tab-pizza">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Margherita</h4>
+              <p>Tomatensauce, Mozzarella, frisches Basilikum <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 12,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Salami Classico</h4>
+              <p>Tomatensauce, Mozzarella, Salami</p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Vegetariana</h4>
+              <p>Tomatensauce, Mozzarella, Paprika, Zucchini, Oliven, Champignons <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Prosciutto e Funghi</h4>
+              <p>Tomatensauce, Mozzarella, Schinken, Champignons</p>
+            </div>
+            <span class="menu-price">€ 14,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Kennidi Special</h4>
+              <p>Tomatensauce, Mozzarella, Rucola, Parmaschinken, Kirschtomaten</p>
+            </div>
+            <span class="menu-price">€ 16,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Vegan Pizza</h4>
+              <p>Tomatensauce, Vegan-Käse, Saisongemüse <span class="tag vegan">VE</span> <span class="tag gf">GF möglich</span></p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burger -->
+      <div class="menu-panel" id="tab-burger">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Classic Beef Burger</h4>
+              <p>AMA-Rindfleisch-Patty, Salat, Tomate, Zwiebel, Kennidi-Sauce, Pommes</p>
+            </div>
+            <span class="menu-price">€ 15,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Kennidi Signature Burger</h4>
+              <p>Doppel-Patty, Cheddar, Bacon, Karamellzwiebeln, BBQ-Sauce, Pommes</p>
+            </div>
+            <span class="menu-price">€ 18,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Veggie Burger</h4>
+              <p>Hausgemachtes Gemüse-Patty, Avocado, frische Kräuter, Joghurt-Sauce <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 14,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Chicken Burger</h4>
+              <p>Crispy Chicken, Coleslaw, Honig-Senf-Sauce, Pommes</p>
+            </div>
+            <span class="menu-price">€ 15,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Alpine Burger</h4>
+              <p>AMA-Rindfleisch-Patty, Bergkäse, Röstzwiebeln, Preiselbeeren, Pommes</p>
+            </div>
+            <span class="menu-price">€ 17,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasta -->
+      <div class="menu-panel" id="tab-pasta">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghetti Bolognese</h4>
+              <p>Hausgemachtes Ragù vom österreichischen Rindfleisch, Parmesan</p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Penne Arrabbiata</h4>
+              <p>Tomatensauce, Knoblauch, Chili, frisches Basilikum <span class="tag vegan">VE</span></p>
+            </div>
+            <span class="menu-price">€ 12,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Tagliatelle Alfredo</h4>
+              <p>Cremige Parmesan-Sauce, Butter, schwarzer Pfeffer <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Gnocchi al Pesto</h4>
+              <p>Hausgemachtes Basilikum-Pesto, Kirschtomaten, Parmesan <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 13,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghetti Carbonara</h4>
+              <p>Speck, Ei, Parmesan, schwarzer Pfeffer — das Original</p>
+            </div>
+            <span class="menu-price">€ 14,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Steaks -->
+      <div class="menu-panel" id="tab-steaks">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Rumpsteak 200 g</h4>
+              <p>AMA-Rindfleisch, Kräuterbutter, Bratkartoffeln, Salatgarnitur</p>
+            </div>
+            <span class="menu-price">€ 24,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Ribeye Steak 250 g</h4>
+              <p>AMA-Rindfleisch, Jus, Grillgemüse, Pommes</p>
+            </div>
+            <span class="menu-price">€ 28,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Filetsteak 180 g</h4>
+              <p>AMA-Rindfleisch Premium, Sauce Béarnaise, Gemüse, Kartoffelgratin</p>
+            </div>
+            <span class="menu-price">€ 29,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>T-Bone Steak 350 g</h4>
+              <p>AMA-Rindfleisch, Kräuterbutter, Rosmarin-Kartoffeln, Salatbeilage</p>
+            </div>
+            <span class="menu-price">€ 34,50</span>
+          </div>
+        </div>
+        <p class="menu-note">Alle Steaks aus österreichischem AMA-zertifiziertem Rindfleisch. Gargrad auf Wunsch: rare / medium / well done.</p>
+      </div>
+
+      <!-- Salate -->
+      <div class="menu-panel" id="tab-salate">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Gemischter Salat</h4>
+              <p>Saisonaler Blattsalat, Hausvinaigrette <span class="tag vegan">VE</span> <span class="tag gf">GF</span></p>
+            </div>
+            <span class="menu-price">€ 9,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Caesar Salad</h4>
+              <p>Römersalat, Parmesan, Croutons, Caesar-Dressing</p>
+            </div>
+            <span class="menu-price">€ 13,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Griechischer Salat</h4>
+              <p>Tomaten, Gurken, Oliven, Feta, rote Zwiebeln, Oregano <span class="tag veg">V</span> <span class="tag gf">GF</span></p>
+            </div>
+            <span class="menu-price">€ 11,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Kennidi Salat</h4>
+              <p>Bunter Salat mit Grillhühnchen, Avocado, Kirschtomaten, Zitronendressing <span class="tag gf">GF</span></p>
+            </div>
+            <span class="menu-price">€ 15,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-panel" id="tab-desserts">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Hausgemachter Apfelstrudel</h4>
+              <p>Mit Vanillesauce oder Schlagobers <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 7,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Kuchen des Tages</h4>
+              <p>Hausgemacht — fragt uns nach der aktuellen Auswahl <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 5,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Eisbecher nach Wahl</h4>
+              <p>Auswahl aus verschiedenen Eissorten, frische Früchte, Schlagobers <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">ab € 8,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Schokoladenkuchen</h4>
+              <p>Warm, mit flüssigem Kern, Vanilleeis <span class="tag veg">V</span></p>
+            </div>
+            <span class="menu-price">€ 8,50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Getränke -->
+      <div class="menu-panel" id="tab-getraenke">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Segafredo Espresso</h4>
+              <p>Fairtrade-zertifiziert</p>
+            </div>
+            <span class="menu-price">€ 2,80</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Cappuccino</h4>
+              <p>Segafredo Fairtrade, aufgeschäumte Milch</p>
+            </div>
+            <span class="menu-price">€ 3,80</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Melange</h4>
+              <p>Österreichischer Klassiker</p>
+            </div>
+            <span class="menu-price">€ 3,60</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Frisch gepresster Orangensaft</h4>
+              <p>0,3 l <span class="tag vegan">VE</span> <span class="tag gf">GF</span></p>
+            </div>
+            <span class="menu-price">€ 4,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Hauswein</h4>
+              <p>Weiß oder Rot, 0,25 l</p>
+            </div>
+            <span class="menu-price">€ 4,80</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Craft Beer</h4>
+              <p>Regionales Bier vom Fass, 0,5 l</p>
+            </div>
+            <span class="menu-price">€ 4,50</span>
+          </div>
+        </div>
+        <p class="menu-note">☕ Wir verwenden ausschließlich Segafredo Fairtrade-Kaffee.</p>
+      </div>
+
+      <!-- Legend -->
+      <div class="menu-legend">
+        <span class="tag veg">V</span> Vegetarisch &nbsp;
+        <span class="tag vegan">VE</span> Vegan &nbsp;
+        <span class="tag gf">GF</span> Glutenfrei
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── RESERVATION ───────────────────────── -->
+  <section class="reserve-section" id="reserve">
+    <div class="container">
+      <div class="reserve-card" data-animate="fade-up">
+        <div class="reserve-text">
+          <span class="section-label light">Reservierung</span>
+          <h2>Tisch reservieren</h2>
+          <p>Ruf uns an oder schreib uns eine E-Mail — wir freuen uns auf euren Besuch!</p>
+          <div class="reserve-contacts">
+            <a href="tel:+43660537446" class="reserve-btn">
+              <span>📞</span> 0043 660 53 77 446
+            </a>
+            <a href="mailto:kennidi@ampere.at" class="reserve-btn outline">
+              <span>✉️</span> kennidi@ampere.at
+            </a>
+          </div>
+        </div>
+        <div class="reserve-form-wrap">
+          <form class="reserve-form" id="reserveForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Vorname</label>
+                <input type="text" id="fname" name="fname" placeholder="Max" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Nachname</label>
+                <input type="text" id="lname" name="lname" placeholder="Mustermann" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Datum</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Uhrzeit</label>
+                <input type="time" id="time" name="time" min="12:00" max="21:30" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Personen</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Bitte wählen</option>
+                  <option>1</option><option>2</option><option>3</option>
+                  <option>4</option><option>5</option><option>6</option>
+                  <option>7</option><option>8+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+43 …" />
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="notes">Anmerkungen</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Allergien, besondere Wünsche …"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn">Anfrage senden</button>
+            <div class="form-success" id="formSuccess" hidden>
+              ✅ Danke! Wir melden uns in Kürze.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CONTACT + MAP ───────────────────────── -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Wo wir sind</span>
+        <h2>Kontakt &amp; Anfahrt</h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-card">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Adresse</strong>
+                <p>Wilhelm Fazokas Str. 15c<br />A-5710 Kaprun, Österreich</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Telefon</strong>
+                <p><a href="tel:+43660537446">0043 660 53 77 446</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>E-Mail</strong>
+                <p><a href="mailto:kennidi@ampere.at">kennidi@ampere.at</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕛</span>
+              <div>
+                <strong>Öffnungszeiten</strong>
+                <p>Täglich 12:00 – 22:00 Uhr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap" data-animate="fade-left">
+          <iframe
+            title="Kennidi Kaprun auf Google Maps"
+            src="https://maps.google.com/maps?q=Wilhelm+Fazokas+Str+15c,+5710+Kaprun,+Austria&output=embed&z=16"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">☕</span>
+          <span class="logo-text">Kennidi</span>
+          <p>Café &amp; Restaurant in Kaprun<br />Frisch · Kreativ · Gemütlich</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Über uns</a>
+          <a href="#highlights">Küche</a>
+          <a href="#menu">Speisekarte</a>
+          <a href="#reserve">Reservierung</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <div class="footer-ama">
+          <div class="ama-badge small">
+            <div class="ama-icon">🏅</div>
+            <div class="ama-text">
+              <strong>AMA-zertifiziert</strong>
+              <span>Österreichische Qualität</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Café &amp; Restaurant Kennidi · Wilhelm Fazokas Str. 15c · A-5710 Kaprun</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
