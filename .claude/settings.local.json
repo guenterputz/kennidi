@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ampere.at)",
+      "Bash(ls:*)"
+    ]
+  }
+}
