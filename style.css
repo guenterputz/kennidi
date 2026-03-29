@@ -260,9 +260,9 @@ h4 { font-size: 1.05rem; }
   overflow: hidden;
   background:
     linear-gradient(160deg,
-      rgba(10,25,8,.72) 0%,
-      rgba(30,60,20,.45) 50%,
-      rgba(8,18,5,.82) 100%
+      rgba(10,25,8,.42) 0%,
+      rgba(30,60,20,.22) 50%,
+      rgba(8,18,5,.52) 100%
     ),
     url("bilder/Kennidi-Kaprun.webp")
     center/cover no-repeat;
